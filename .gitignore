@@ -18,7 +18,7 @@
 **/History
 
 #ignore document folders
-**/__DOCUMENT__
+**/__Documents__
 
 #ignore file structures
 **/Vx.y_MMYYDD
