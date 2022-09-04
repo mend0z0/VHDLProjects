@@ -9,7 +9,7 @@
 --	Version:		01
 --	Revision:	00
 --	Date:			09/03/2022
--- Company:		Mend0z0
+--	Company:		Mend0z0
 --	Client:		------------
 --	License:		Private License (Contact for more info.)
 --	-------------------------------- Project Description -------------------------------------------
