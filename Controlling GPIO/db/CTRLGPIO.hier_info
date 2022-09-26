@@ -1,0 +1,5 @@
+|CTRLGPIO
+KEY_0 => LED_0~reg0.CLK
+LED_0 <> LED_0~reg0
+
+

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projects/SiavashTP/OSSH/VHDL/Controlling GPIO/CTRLGPIO.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, D:/Projects/SiavashTP/OSSH/VHDL/Controlling GPIO/db/CTRLGPIO.cbx.xml
+design_name = CTRLGPIO
+instance = comp, \LED_0~output\, LED_0~output, CTRLGPIO, 1
+instance = comp, \KEY_0~input\, KEY_0~input, CTRLGPIO, 1
+instance = comp, \LED_0~2\, LED_0~2, CTRLGPIO, 1
+instance = comp, \LED_0~reg0\, LED_0~reg0, CTRLGPIO, 1
+instance = comp, \LED_0~input\, LED_0~input, CTRLGPIO, 1

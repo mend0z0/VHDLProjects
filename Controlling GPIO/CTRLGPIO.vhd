@@ -3,18 +3,18 @@
 --
 --				Project Name: CTRLGPIO
 --		  @Brief Description: Simple control on GPIOs
---				 File Status:	DRAFT
+--				 File Status:	CHECKED
 --						(DRAFT , PRILIMINARY, CHECKED, RELEASED)
 --	File Name:	CTRLGPIO.vhd
 --	Version:		01
 --	Revision:	00
---	Date:			09/03/2022
+--	Date:			09/25/2022
 --	Company:		Mend0z0
 --	Client:		------------
 --	License:		Private License (Contact for more info.)
 --	-------------------------------- Project Description -------------------------------------------
 --	@Detailed Description: In this project we just want to control GPIOs and turning on/off the output
---	LEDs.
+--	LED regarding the KEY_0 status. Each time the KEY_0 is pressed the LED will toggle.
 --
 --
 --	-------------------------------- File Description ----------------------------------------------
@@ -63,17 +63,31 @@
 -----------------------------------------------------------------------------------------------------
 ----------------------------       LIBRARIES DECLARATION       --------------------------------------
 -----------------------------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
 
 -----------------------------------------------------------------------------------------------------
 ------------------------------      ENTITY DECLARATION       ----------------------------------------
 -----------------------------------------------------------------------------------------------------
+entity CTRLGPIO is 
+	port (
+				KEY_0 : IN 		STD_LOGIC;
+				LED_0	: INOUT	STD_LOGIC
+	);
+end CTRLGPIO;
 
 -----------------------------------------------------------------------------------------------------
 ----------------------------      ARCHITECTURE DECLARATION     --------------------------------------
 -----------------------------------------------------------------------------------------------------
-
-
-
+architecture bhv of CTRLGPIO is
+	begin
+		process( KEY_0 )
+			begin
+				if KEY_0'event and KEY_0 = '1' then
+					LED_0 <= LED_0 XOR '1';
+				end if;
+		end process;
+end bhv;
 
 --------------------------   (C)SIAVASH TAHER PARVAR ALL RIGHTS RESERVED   ------------------------
 ------------------------------------     END OF THE FILE      -------------------------------------
